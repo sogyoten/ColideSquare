@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class ScoreResult : MonoBehaviour
 {
     public string score_key = "SCORE";
+    public string scene_name = "60sec";
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +23,7 @@ public class ScoreResult : MonoBehaviour
         }
 
         if (Input.GetKeyDown(KeyCode.R)) {
-            SceneManager.LoadScene("60sec");
+            SceneManager.LoadScene(scene_name);
         }
     }
 }

@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class HighScore : MonoBehaviour
 {
-    public string highscore_key = "HIGH_SCORE";
+    public string highscore_key = "60SEC_SCORE";
     public string score_key = "SCORE";
     public bool higher_better = true;
     // Start is called before the first frame update

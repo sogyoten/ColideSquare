@@ -217,6 +217,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score_key: SCORE
+  scene_name: 60sec
 --- !u!1 &1033783219
 GameObject:
   m_ObjectHideFlags: 0
@@ -415,7 +416,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3684382f0bbdd34591db21a9bb692e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  highscore_key: HIGH_SCORE
+  highscore_key: 60SEC_SCORE
   score_key: SCORE
   higher_better: 1
 --- !u!1 &1271949994
