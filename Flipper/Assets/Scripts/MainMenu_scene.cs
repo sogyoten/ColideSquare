@@ -41,7 +41,10 @@ public class MainMenu_scene : MonoBehaviour
             SceneMove(scene_num);
         }
 
-        
+        if (Input.GetKey(KeyCode.Escape)) {
+            Application.Quit();
+        }
+
     }
 
     void Refresh_Text(int scene_num) {

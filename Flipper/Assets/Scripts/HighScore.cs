@@ -5,10 +5,15 @@ using UnityEngine.UI;
 
 public class HighScore : MonoBehaviour
 {
-    public string highscore_key = "60SEC_SCORE";
+    public string highscore_key = "";
     public string score_key = "SCORE";
     public bool higher_better = true;
     // Start is called before the first frame update
+
+    void Awake() {
+        highscore_key = PlayerPrefs.GetString("SCENE_NAME") + "_SCORE";
+    }
+
     void Start() {
         int result_score = PlayerPrefs.GetInt(score_key);
         int high_score = PlayerPrefs.GetInt(highscore_key);

@@ -7,10 +7,17 @@ using UnityEngine.SceneManagement;
 public class ScoreResult : MonoBehaviour
 {
     public string score_key = "SCORE";
-    public string scene_name = "60sec";
+    string scene_name = "";
+    
+
+    private void Awake() {
+        
+    }
+
     // Start is called before the first frame update
     void Start()
     {
+        scene_name = PlayerPrefs.GetString("SCENE_NAME");
         int result_score = PlayerPrefs.GetInt(score_key);
         GetComponent<Text>().text = result_score.ToString();
     }
